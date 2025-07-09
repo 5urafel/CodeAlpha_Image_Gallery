@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Gallery</h1>
+      <div class="controls">
+        <select id="filter">
+          <option value="none">No Filter</option>
+          <option value="grayscale">Grayscale</option>
+          <option value="sepia">Sepia</option>
+          <option value="blur">Blur</option>
+        </select>
+        <div class="categories">
+          <button data-category="all">All</button>
+          <button data-category="nature">Nature</button>
+          <button data-category="urban">Urban</button>
+        </div>
+      </div>
+      <div class="gallery">
+        <img
+          src="./Assets/img/natue-1.jpg"
+          data-category="nature"
+          alt="Nature 1"
+        />
+        <img
+          src="./Assets/img/urban-1.jpg"
+          data-category="urban"
+          alt="Urban 1"
+        />
+        <img
+          src="./Assets/img/nature-2.jpg"
+          data-category="nature"
+          alt="Nature 2"
+        />
+        <img
+          src="./Assets/img/urban-2.jpg"
+          data-category="urban"
+          alt="Urban 2"
+        />
+        <img
+          src="./Assets/img/nature-3.jpg"
+          data-category="nature"
+          alt="Nature 3"
+        />
+        <img
+          src="./Assets/img/urban-3.jpg"
+          data-category="urban"
+          alt="Urban 3"
+        />
+      </div>
+      <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <button class="prev">&larr;</button>
+        <img src="" alt="Lightbox Image" />
+        <button class="next">&rarr;</button>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
